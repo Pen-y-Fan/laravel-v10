@@ -22,8 +22,7 @@ The following packages have been used:
 - [Parallel-Lint](https://github.com/php-parallel-lint/PHP-Parallel-Lint) - This application checks syntax of PHP files
   in parallel
 - [IDE helper](https://github.com/barryvdh/laravel-ide-helper) - helper for IDE auto-completion
-
-[//]: # (- [Laravel debug bar]&#40;https://github.com/barryvdh/laravel-debugbar&#41; - debug bar for views, shows models, db calls etc.)
+- [Laravel debug bar](https://github.com/barryvdh/laravel-debugbar) - debug bar for views, shows models, db calls etc.
 - [GrumPHP](https://github.com/phpro/grumphp) - pre-commit hook to run the above tools before committing code
 
 ## Requirements
