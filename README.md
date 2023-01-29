@@ -6,13 +6,8 @@ This project has been created to experiment with the **Laravel version 10**.
 
 The following packages have been used:
 
-<!--
-- [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html) - Authentication starter kit. Livewire
+- [Laravel Breeze](https://jetstream.laravel.com/2.x/introduction.html) - Authentication starter kit. Livewire
   version, including Teams.
-- [Laravel Livewire](https://laravel-livewire.com/) - Included with Jetstream (and Filament).
-- [Filament admin panel](https://filamentphp.com/docs/2.x/admin/installation) - Admin panel restricted to admin users
-  only. Forms can be re-used in the front end!
--->
 
 ### Dev Tooling
 
@@ -149,12 +144,50 @@ PHPUnit 9.5.28 by Sebastian Bergmann and contributors.
 Example (Tests\Unit\Example)
  ✔ That true is true
 
+Authentication (Tests\Feature\Auth\Authentication)
+ ✔ Login screen can be rendered
+ ✔ Users can authenticate using the login screen
+ ✔ Users can not authenticate with invalid password
+ ✔ Users can logout
+
+Email Verification (Tests\Feature\Auth\EmailVerification)
+ ✔ Email verification screen can be rendered
+ ✔ Email can be verified
+ ✔ Email verification notification can be sent
+ ✔ Email is not verified with invalid hash
+
+Password Confirmation (Tests\Feature\Auth\PasswordConfirmation)
+ ✔ Confirm password screen can be rendered
+ ✔ Password can be confirmed
+ ✔ Password is not confirmed with invalid password
+
+Password Reset (Tests\Feature\Auth\PasswordReset)
+ ✔ Reset password link screen can be rendered
+ ✔ Reset password link can be requested
+ ✔ Reset password screen can be rendered
+ ✔ Password can be reset with valid token
+
+Password Update (Tests\Feature\Auth\PasswordUpdate)
+ ✔ Password can be updated
+ ✔ Correct password must be provided to update password
+
+Registration (Tests\Feature\Auth\Registration)
+ ✔ Registration screen can be rendered
+ ✔ New users can register
+
 Example (Tests\Feature\Example)
  ✔ The application returns a successful response
 
-Time: 00:00.122, Memory: 22.00 MB
+Profile (Tests\Feature\Profile)
+ ✔ Profile page is displayed
+ ✔ Profile information can be updated
+ ✔ Email verification status is unchanged when the email address is unchanged
+ ✔ User can delete their account
+ ✔ Correct password must be provided to delete account
 
-OK (2 tests, 2 assertions)
+Time: 00:04.148, Memory: 46.00 MB
+
+OK (26 tests, 67 assertions)
 ```
 
 Easy Coding Standard (ECS) is used to check for style and code standards, [PSR-12](https://www.php-fig.org/psr/psr-12/)

@@ -15,6 +15,7 @@
         "barryvdh/laravel-debugbar": "dev-master",
         "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
+        "laravel/breeze": "^1.18",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
@@ -59,6 +60,7 @@
         "fix-cs": "ecs check --fix --ansi",
         "lint": "parallel-lint --exclude .git --exclude node_modules --exclude storage --exclude vendor .",
         "phpstan": "phpstan analyse --error-format symplify --ansi",
+        "phpstan-baseline": "phpstan analyse --generate-baseline",
         "tests": "phpunit --testdox",
         "ide": "@php artisan ide-helper:models -W",
         "all": [

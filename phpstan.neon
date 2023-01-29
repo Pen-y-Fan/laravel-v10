@@ -1,4 +1,6 @@
 includes:
+    - phpstan-baseline.neon
+
     # composer require symplify/phpstan-extensions --dev
     # vendor/bin/phpstan analyse src --level max --error-format symplify
     - vendor/symplify/phpstan-extensions/config/config.neon
@@ -12,6 +14,7 @@ includes:
 parameters:
     paths:
         - app
+        - database
         - tests
 
 
